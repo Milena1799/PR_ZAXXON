@@ -22,8 +22,6 @@ public class PlayerMove : MonoBehaviour
         float desplV = Input.GetAxis("Vertical");
         float desplR = Input.GetAxis("Rotar");
 
-
-
         print(desplR);
         transform.Translate(Vector3.right * Time.deltaTime * desplSpeed * desplX, Space.World);
         transform.Translate(Vector3.up * Time.deltaTime * desplSpeed * desplV, Space.World);
