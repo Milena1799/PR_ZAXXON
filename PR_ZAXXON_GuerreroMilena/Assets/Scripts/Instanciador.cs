@@ -25,8 +25,9 @@ public class Instanciador : MonoBehaviour
         while (true)
         {
             print("Hola");
-
-            Instantiate(columna, instantiatePosicion);
+            float randomX = Random.Range(-18f, 18f);
+            Vector3 newPos = new Vector3(randomX, instantiatePosicion.position.y, instantiatePosicion.position.z);
+            Instantiate(columna, newPos, Quaternion.identity);
             
             yield return new WaitForSeconds(intervalo);
 
