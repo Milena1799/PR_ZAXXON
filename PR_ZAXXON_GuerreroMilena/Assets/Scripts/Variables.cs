@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Variables : MonoBehaviour
 {
+    public int velocidad;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        velocidad = 25; 
     }
 
     // Update is called once per frame

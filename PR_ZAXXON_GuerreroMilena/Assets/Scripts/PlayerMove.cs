@@ -8,6 +8,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float desplSpeed;
     [SerializeField] float rotationSpeed;
 
+    [SerializeField] GameObject objeto;
+    private Variables variables_Objetos;
+
     float limiteH = 18f;
     float limiteVDown = 0.5f;
     float limiteVUp = 20f;
@@ -17,6 +20,8 @@ public class PlayerMove : MonoBehaviour
     {
         desplSpeed = 10f;
         rotationSpeed = 100f;
+        objeto = GameObject.Find("Variables");
+        variables_Objetos = objeto.GetComponent<Variables>();
     }
 
     // Update is called once per frame
@@ -24,6 +29,7 @@ public class PlayerMove : MonoBehaviour
     
     {
         MoverNave();
+        desplSpeed = variables_Objetos.velocidad;
 
     }
 
