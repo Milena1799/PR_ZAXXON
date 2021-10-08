@@ -21,6 +21,12 @@ public class ColumnaMove : MonoBehaviour
     {
         speed = variables_Objetos.velocidad;
         transform.Translate(Vector3.back * Time.deltaTime * speed);
+
+        float posZ = transform.position.z;
+        if (posZ < -30)
+        {
+            Destroy(gameObject);
+        }
     }
 
   
