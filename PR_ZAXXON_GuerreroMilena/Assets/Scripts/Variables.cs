@@ -9,7 +9,7 @@ public class Variables : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidad = 25; 
+        velocidad = 50; 
     }
 
     // Update is called once per frame
