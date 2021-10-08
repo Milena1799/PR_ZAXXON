@@ -388,7 +388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570915545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.3, y: 0.2, z: 0}
+  m_LocalPosition: {x: 14.3, y: 0.2, z: -23.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1284,6 +1284,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   columna: {fileID: 132117613978686440, guid: 03282900d3f4efc41ba204585be25920, type: 3}
+  obstaculos:
+  - {fileID: 132117613978686440, guid: 03282900d3f4efc41ba204585be25920, type: 3}
+  - {fileID: 132117613978686440, guid: 03282900d3f4efc41ba204585be25920, type: 3}
+  - {fileID: 78928349528027402, guid: b1dd595d4cff18d489e1e90135a36572, type: 3}
+  - {fileID: 78928349528027402, guid: b1dd595d4cff18d489e1e90135a36572, type: 3}
+  - {fileID: 78928349528027402, guid: b1dd595d4cff18d489e1e90135a36572, type: 3}
   instantiatePosicion: {fileID: 2123127848}
 --- !u!4 &2123127848
 Transform:
