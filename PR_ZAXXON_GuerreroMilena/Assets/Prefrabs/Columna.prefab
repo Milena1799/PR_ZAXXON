@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 132117613978686442}
   - component: {fileID: 132117613978686443}
-  m_Layer: 0
+  - component: {fileID: 3399552161097913451}
+  m_Layer: 16
   m_Name: Columna
-  m_TagString: Untagged
+  m_TagString: Columna
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132117613978686440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000000013411, y: 0, z: 3.1825}
+  m_LocalPosition: {x: 0.000000013411, y: 0, z: -250.3}
   m_LocalScale: {x: 0.775, y: 2.6540623, z: 0.7625}
   m_Children:
   - {fileID: 132117615029330716}
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objeto: {fileID: 0}
+--- !u!65 &3399552161097913451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132117613978686440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.07, y: 14.68, z: 4.03}
+  m_Center: {x: 0, y: 6.85, z: 13.4}
 --- !u!1 &132117615029330717
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,8 +71,7 @@ GameObject:
   - component: {fileID: 132117615029330716}
   - component: {fileID: 132117615029330705}
   - component: {fileID: 132117615029330718}
-  - component: {fileID: 132117615029330719}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: CuerpoColumnna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,20 +141,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &132117615029330719
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132117615029330717}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &132117615537620268
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,8 +152,7 @@ GameObject:
   - component: {fileID: 132117615537620271}
   - component: {fileID: 132117615537620256}
   - component: {fileID: 132117615537620257}
-  - component: {fileID: 132117615537620270}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: 'CabezaColumnna '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,17 +222,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &132117615537620270
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132117615537620268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

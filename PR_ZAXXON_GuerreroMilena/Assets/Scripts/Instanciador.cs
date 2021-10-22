@@ -11,7 +11,11 @@ public class Instanciador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         intervalo = 0.5f;
+      
+
+     //corrutina obstaculos creadas
         StartCoroutine("CrearColumna");
     }
 
@@ -25,8 +29,8 @@ public class Instanciador : MonoBehaviour
     {
         while (true)
         {
-          
-            float randomX = Random.Range(-18f, 18f);
+            
+            float randomX = Random.Range(-17f, 17f);
             //Genero un número aleatorio para elegir el obstaculo
 
 

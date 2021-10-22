@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] GameObject objeto;
     private Variables variables_Objetos;
 
-    float limiteH = 18f;
+    float limiteH = 24f;
     float limiteVDown = 0.5f;
     float limiteVUp = 20f;
 
@@ -35,7 +36,7 @@ public class PlayerMove : MonoBehaviour
 
     void MoverNave()
     {
-        //Variables de movimiento y ratación
+        //Variables de movimiento y rotación
         float desplX = Input.GetAxis("Horizontal");
         float desplV = Input.GetAxis("Vertical");
         float desplR = Input.GetAxis("Rotar");
@@ -86,5 +87,18 @@ public class PlayerMove : MonoBehaviour
 
         }
         */
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("He chocao con " + other.gameObject.layer);
+        if (other.gameObject.layer == 16)
+        {
+            variables_Objetos.velocidad = 0;
+           
+        }
+
+
+
     }
 }
