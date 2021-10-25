@@ -91,7 +91,8 @@ public class PlayerMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("He chocao con " + other.gameObject.layer);
+        print("He chocao con " + other.gameObject.layer
+            );
         if (other.gameObject.layer == 16)
         {
             variables_Objetos.velocidad = 0;
