@@ -98,8 +98,5 @@ public class PlayerMove : MonoBehaviour
             variables_Objetos.velocidad = 0;
            
         }
-
-
-
-    }
+     }
 }
