@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Variables : MonoBehaviour
+public class Volumen : MonoBehaviour
 {
-    public static int vidas;
-    public int velocidad;
-    
-  
-
+    public static float musicVolume = 50f;
+    public static int numLives;
+    public static int difficulty;
     // Start is called before the first frame update
     void Start()
     {
-        velocidad = 50;
-        vidas = 6;
+       
     }
 
     // Update is called once per frame
@@ -21,6 +18,4 @@ public class Variables : MonoBehaviour
     {
         
     }
-
-  
 }

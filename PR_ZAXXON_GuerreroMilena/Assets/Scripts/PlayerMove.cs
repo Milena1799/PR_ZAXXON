@@ -16,6 +16,8 @@ public class PlayerMove : MonoBehaviour
     float limiteVDown = 0.5f;
     float limiteVUp = 20f;
 
+    int vidas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class PlayerMove : MonoBehaviour
         rotationSpeed = 100f;
         objeto = GameObject.Find("Variables");
         variables_Objetos = objeto.GetComponent<Variables>();
+
+        vidas = Variables.vidas;
     }
 
     // Update is called once per frame
@@ -94,9 +98,22 @@ public class PlayerMove : MonoBehaviour
 
         if (other.gameObject.layer == 16)
         {
-            print("Has chocado contra un objeto");
+            
             //variables_Objetos.velocidad = 0;
+            if (vidas < 1)
+            {
+                Variables.vidas--;
+                print("Has chocado contra un objeto");
+            }
+            else
+            {
+                print("Muerto");
+                SceneManager.LoadScene(5);
+                //gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
 
+            }
         }
     }
+
+    
 }
