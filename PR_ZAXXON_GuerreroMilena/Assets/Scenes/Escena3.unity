@@ -1296,6 +1296,9 @@ MonoBehaviour:
   - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
   - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
   - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 3267419595251341136, guid: 3d9a7e9c2b5b9ab49a708f4674f399f9, type: 3}
+  - {fileID: 3267419595251341136, guid: 3d9a7e9c2b5b9ab49a708f4674f399f9, type: 3}
   instantiatePosicion: {fileID: 2123127848}
 --- !u!4 &2123127848
 Transform:
