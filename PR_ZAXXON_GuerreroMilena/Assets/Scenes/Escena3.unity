@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b1adf57a5ba1e6f4e8d8b282bb24a96c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -645,14 +645,14 @@ RectTransform:
   m_GameObject: {fileID: 788014829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 1979590892}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 178, y: -90}
+  m_AnchoredPosition: {x: 257.9, y: -90}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788014831
@@ -1224,6 +1224,16 @@ MonoBehaviour:
   - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
   - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
   - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
+  - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
+  - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
+  - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
+  - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
+  - {fileID: 3212354081563776607, guid: d1b6937e22e26c448aba843bbfe07a78, type: 3}
+  - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
   - {fileID: 6214352303454080088, guid: 0c972d625037b974fa3f496fd2ba3c09, type: 3}
   instantiatePosicion: {fileID: 2123127848}
 --- !u!4 &2123127848
@@ -1247,9 +1257,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7101754565442754130, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754565534965860, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754565627597566, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754565778429137, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754565851256773, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754566137479885, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754566651930082, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754567094391035, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7101754567237959089, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
       propertyPath: m_Name
       value: Nave
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101754567237959090, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
+      propertyPath: vidaPlayer
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7101754567237959090, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
       propertyPath: vidaVisual

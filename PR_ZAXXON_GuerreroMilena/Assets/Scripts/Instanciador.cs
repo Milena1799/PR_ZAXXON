@@ -12,7 +12,7 @@ public class Instanciador : MonoBehaviour
     void Start()
     {
 
-        intervalo = 0.5f;
+        intervalo = 0.1f;
       
 
      //corrutina obstaculos creadas
@@ -37,17 +37,17 @@ public class Instanciador : MonoBehaviour
 
             if (obstaculos[numAl].tag == "Cristal")
             {
-                 randomX = Random.Range(-17f, 17f);
-                 randomY = 20f;
+                 randomX = Random.Range(-24f, 24f);
+                 randomY = 16f;
             }
             else if (obstaculos[numAl].tag == "Cristal1")
             {
-                randomX = Random.Range(-17f, 17f);
-                randomY = 3f;
+                randomX = Random.Range(-24f, 24f);
+                randomY = 4f;
             }
             else
             {
-                randomX = Random.Range(-17f, 17f);
+                randomX = Random.Range(-24f, 24f);
                 randomY = 0;
             }
 

@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     private Variables variables_Objetos;
 
     float limiteH = 24f;
-    float limiteVDown = 0.5f;
+    float limiteVDown = 3f;
     float limiteVUp = 20f;
 
     public int vidaPlayer;
@@ -47,7 +47,7 @@ public class PlayerMove : MonoBehaviour
         if (vidaPlayer <= 0)
         {
             print("GAME OVER");
-            SceneManager.LoadScene(5);  
+            SceneManager.LoadScene(3);  
         }
     }
 
@@ -132,7 +132,7 @@ public class PlayerMove : MonoBehaviour
         if (other.gameObject.layer == 16)
         {
             print("DADO");
-            vidaPlayer = vidaPlayer-2;
+            vidaPlayer = vidaPlayer-3;
         }
     }
 

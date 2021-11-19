@@ -13,7 +13,7 @@ public class Variables : MonoBehaviour
     void Start()
     {
         vidas = 6; 
-        velocidad = 50;
+        velocidad = 60;
         
     }
 
