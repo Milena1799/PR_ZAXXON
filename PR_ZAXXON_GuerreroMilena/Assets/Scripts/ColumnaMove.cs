@@ -7,6 +7,10 @@ public class ColumnaMove : MonoBehaviour
     [SerializeField] GameObject objeto;
     private Variables variables_Objetos;
     int  speed;
+
+    public int damage;
+    public GameObject Player;
+
    
     // Start is called before the first frame update
     void Start()
@@ -28,8 +32,15 @@ public class ColumnaMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+         if (other.tag =="Player")
+        {
+            print("DADO");
+            Player.GetComponent<PlayerMove>().vidaPlayer -= damage;
+        }
+    }
 
-  
 }
 
 

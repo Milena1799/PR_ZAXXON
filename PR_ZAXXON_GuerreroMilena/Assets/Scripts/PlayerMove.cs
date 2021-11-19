@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -16,8 +17,12 @@ public class PlayerMove : MonoBehaviour
     float limiteVDown = 0.5f;
     float limiteVUp = 20f;
 
-    int vidas;
+    public int vidaPlayer;
+    
+    public Slider vidaVisual;
+   // int vidas;
 
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +30,9 @@ public class PlayerMove : MonoBehaviour
         rotationSpeed = 100f;
         objeto = GameObject.Find("Variables");
         variables_Objetos = objeto.GetComponent<Variables>();
+        
 
-        vidas = Variables.vidas;
+       // vidas = Variables.vidas;
     }
 
     // Update is called once per frame
@@ -36,6 +42,13 @@ public class PlayerMove : MonoBehaviour
         MoverNave();
         desplSpeed = variables_Objetos.velocidad;
 
+       
+        vidaVisual.GetComponent<Slider>().value = vidaPlayer;
+        if (vidaPlayer <= 0)
+        {
+            print("GAME OVER");
+            SceneManager.LoadScene(5);  
+        }
     }
 
     void MoverNave()
@@ -93,27 +106,35 @@ public class PlayerMove : MonoBehaviour
         */
     }
 
+    /* private void OnTriggerEnter(Collider other)
+     {
+
+         if (other.gameObject.layer == 16)
+         {
+
+             //variables_Objetos.velocidad = 0;
+             if (vidas > 1)
+             {
+                 Variables.vidas--;
+                 print("Has chocado contra un objeto");
+             }
+             else
+             {
+                 print("Game Over");
+                 SceneManager.LoadScene(5);
+                 //gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+
+             }
+         }
+     }*/
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.layer == 16)
         {
-            
-            //variables_Objetos.velocidad = 0;
-            if (vidas < 1)
-            {
-                Variables.vidas--;
-                print("Has chocado contra un objeto");
-            }
-            else
-            {
-                print("Muerto");
-                SceneManager.LoadScene(5);
-                //gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
-
-            }
+            print("DADO");
+            vidaPlayer = vidaPlayer-2;
         }
     }
 
-    
+
 }

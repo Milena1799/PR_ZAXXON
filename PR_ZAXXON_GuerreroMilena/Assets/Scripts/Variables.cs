@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Variables : MonoBehaviour
 {
-    public static int vidas;
+   public static int vidas;
     public int velocidad;
     
   
@@ -12,8 +12,9 @@ public class Variables : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        vidas = 6; 
         velocidad = 50;
-        vidas = 6;
+        
     }
 
     // Update is called once per frame
@@ -22,5 +23,9 @@ public class Variables : MonoBehaviour
         
     }
 
-  
+    public int Getlives()
+    {
+        int liveRest = vidas;
+        return (liveRest);
+    }
 }

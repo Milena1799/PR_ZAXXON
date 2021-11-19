@@ -29,14 +29,31 @@ public class Instanciador : MonoBehaviour
     {
         while (true)
         {
-            
-            float randomX = Random.Range(-17f, 17f);
+            int numAl = Random.Range(0, obstaculos.Length);
+            float randomY;
+            float randomX;
+
             //Genero un número aleatorio para elegir el obstaculo
 
+            if (obstaculos[numAl].tag == "Cristal")
+            {
+                 randomX = Random.Range(-17f, 17f);
+                 randomY = 20f;
+            }
+            else if (obstaculos[numAl].tag == "Cristal1")
+            {
+                randomX = Random.Range(-17f, 17f);
+                randomY = 3f;
+            }
+            else
+            {
+                randomX = Random.Range(-17f, 17f);
+                randomY = 0;
+            }
 
-            Vector3 newPos = new Vector3(randomX, instantiatePosicion.position.y, instantiatePosicion.position.z);
+            Vector3 newPos = new Vector3(randomX, randomY, instantiatePosicion.position.z);
 
-            int numAl = Random.Range(0, obstaculos.Length);
+           
             Instantiate(obstaculos[numAl], newPos, Quaternion.identity);
             /*
             if (numAl == 0)
