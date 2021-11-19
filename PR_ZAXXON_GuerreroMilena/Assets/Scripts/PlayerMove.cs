@@ -134,6 +134,11 @@ public class PlayerMove : MonoBehaviour
             print("DADO");
             vidaPlayer = vidaPlayer-3;
         }
+        else if (other.gameObject.layer == 6)
+        {
+            print("vida");
+            vidaPlayer = vidaPlayer + 3;
+        }
     }
 
 
