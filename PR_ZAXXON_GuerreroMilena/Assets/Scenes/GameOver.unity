@@ -347,7 +347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: salir
+  m_Text: Inicio
 --- !u!222 &315625927
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -544,6 +544,7 @@ GameObject:
   - component: {fileID: 521345130}
   - component: {fileID: 521345129}
   - component: {fileID: 521345128}
+  - component: {fileID: 521345131}
   m_Layer: 5
   m_Name: Salir
   m_TagString: Untagged
@@ -614,7 +615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 521345129}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1475320053}
+        m_TargetAssemblyTypeName: Botones, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Inicio
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &521345129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,6 +666,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521345126}
   m_CullTransparentMesh: 1
+--- !u!114 &521345131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521345126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd72ee99134cd2e4fb2aa624844ede7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 07e667b2f1628644fba6dcce53d09f44, type: 3}
 --- !u!1 &826600495
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +691,7 @@ GameObject:
   - component: {fileID: 826600499}
   - component: {fileID: 826600498}
   - component: {fileID: 826600497}
+  - component: {fileID: 826600500}
   m_Layer: 5
   m_Name: Jugar
   m_TagString: Untagged
@@ -786,6 +813,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826600495}
   m_CullTransparentMesh: 1
+--- !u!114 &826600500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826600495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd72ee99134cd2e4fb2aa624844ede7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 07e667b2f1628644fba6dcce53d09f44, type: 3}
 --- !u!1 &999931167
 GameObject:
   m_ObjectHideFlags: 0

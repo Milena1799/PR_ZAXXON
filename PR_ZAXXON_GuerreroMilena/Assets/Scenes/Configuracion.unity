@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 68526165}
   - component: {fileID: 68526164}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: controles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 406353409}
   - component: {fileID: 406353408}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: volumen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 463861788}
   - component: {fileID: 463861787}
   - component: {fileID: 463861786}
+  - component: {fileID: 463861785}
   m_Layer: 5
   m_Name: Volver
   m_TagString: Untagged
@@ -590,6 +591,19 @@ RectTransform:
   m_AnchoredPosition: {x: -783.9, y: -498.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &463861785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463861783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd72ee99134cd2e4fb2aa624844ede7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 07e667b2f1628644fba6dcce53d09f44, type: 3}
 --- !u!114 &463861786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,7 +710,7 @@ GameObject:
   - component: {fileID: 498452725}
   - component: {fileID: 498452724}
   m_Layer: 5
-  m_Name: Text
+  m_Name: configuracion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

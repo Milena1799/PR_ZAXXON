@@ -209,8 +209,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 927509269}
         m_TargetAssemblyTypeName: Botones, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_MethodName: Salir
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1119,7 +1119,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 25c24e8812d83c3419548307105fdea9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.492
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ZAXXON
+  m_Text: scarlet
 --- !u!222 &1827289640
 CanvasRenderer:
   m_ObjectHideFlags: 0
