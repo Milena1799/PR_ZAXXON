@@ -32,14 +32,7 @@ public class ColumnaMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-         if (other.tag =="Player")
-        {
-            print("DADO");
-            Player.GetComponent<PlayerMove>().vidaPlayer -= damage;
-        }
-    }
+   
 
 }
 

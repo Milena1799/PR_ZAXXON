@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7699426137704601927}
   - component: {fileID: 5565653155324980621}
   - component: {fileID: 5686019831581244602}
-  - component: {fileID: 168005386915603771}
+  - component: {fileID: 5643117643026554214}
   m_Layer: 16
   m_Name: Cristal1
   m_TagString: Cristal1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6629797300637803691, guid: d3d72044d12fc14449c4426330369ba4, type: 3}
+  - {fileID: 2100000, guid: 70ffec64b62a8614f89865f4247b30b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,29 +98,16 @@ MonoBehaviour:
   objeto: {fileID: 0}
   damage: 20
   Player: {fileID: 7101754567237959089, guid: 36d659dc71d58a149bf9fdd41322dc99, type: 3}
---- !u!61 &168005386915603771
-BoxCollider2D:
+--- !u!65 &5643117643026554214
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6214352303454080088}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0077343583, y: -0.000015258033}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.072312, y: 2.1214552}
-  m_EdgeRadius: 0
+  m_Size: {x: 2.0723119, y: 2.1214552, z: 1.9308856}
+  m_Center: {x: 0.0077334046, y: 0, z: 0.027355108}

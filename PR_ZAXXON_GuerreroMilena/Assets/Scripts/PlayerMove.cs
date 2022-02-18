@@ -20,6 +20,8 @@ public class PlayerMove : MonoBehaviour
     public int vidaPlayer;
     
     public Slider vidaVisual;
+
+    [SerializeField] ParticleSystem Explosion;
    // int vidas;
 
    
@@ -47,7 +49,10 @@ public class PlayerMove : MonoBehaviour
         if (vidaPlayer <= 0)
         {
             print("GAME OVER");
-            SceneManager.LoadScene(3);  
+            Instantiate(Explosion, transform.position, Quaternion.identity);
+            Invoke("Morir", 3f);
+            desplSpeed = 0;
+            GetComponent<MeshRenderer>().enabled = false;
         }
     }
 
@@ -132,14 +137,17 @@ public class PlayerMove : MonoBehaviour
         if (other.gameObject.layer == 16)
         {
             print("DADO");
-            vidaPlayer = vidaPlayer-3;
+            vidaPlayer = vidaPlayer-30;
         }
         else if (other.gameObject.layer == 6)
         {
             print("vida");
-            vidaPlayer = vidaPlayer + 3;
+            vidaPlayer = vidaPlayer + 30;
         }
     }
-
+    void Morir()
+    {
+        SceneManager.LoadScene(3);
+    }
 
 }
