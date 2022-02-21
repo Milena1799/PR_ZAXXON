@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -83387254495931081}
   m_Layer: 6
   m_Name: CORA
-  m_TagString: Untagged
+  m_TagString: Vidas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 5444998864667211034}
   m_Layer: 6
   m_Name: CORA
-  m_TagString: Untagged
+  m_TagString: Vidas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

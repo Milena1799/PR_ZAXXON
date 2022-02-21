@@ -20,11 +20,13 @@ public class PlayerMove : MonoBehaviour
     public int vidaPlayer;
     
     public Slider vidaVisual;
-
+    new AudioSource audio;
     [SerializeField] ParticleSystem Explosion;
-   // int vidas;
+    // int vidas;
 
-   
+
+  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class PlayerMove : MonoBehaviour
         rotationSpeed = 100f;
         objeto = GameObject.Find("Variables");
         variables_Objetos = objeto.GetComponent<Variables>();
-        
+        audio = GetComponent<AudioSource>();
 
        // vidas = Variables.vidas;
     }
@@ -138,6 +140,7 @@ public class PlayerMove : MonoBehaviour
         {
             print("DADO");
             vidaPlayer = vidaPlayer-30;
+            audio.Play();
         }
         else if (other.gameObject.layer == 6)
         {
@@ -149,5 +152,7 @@ public class PlayerMove : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+  
 
 }

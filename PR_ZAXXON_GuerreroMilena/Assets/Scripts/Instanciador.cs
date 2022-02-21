@@ -45,6 +45,11 @@ public class Instanciador : MonoBehaviour
                 randomX = Random.Range(-24f, 24f);
                 randomY = 4f;
             }
+            else if (obstaculos[numAl].tag == "Vidas")
+            {
+                randomX = Random.Range(-24f, 24f);
+                randomY = Random.Range(-4f, 16f);
+            }
             else
             {
                 randomX = Random.Range(-24f, 24f);

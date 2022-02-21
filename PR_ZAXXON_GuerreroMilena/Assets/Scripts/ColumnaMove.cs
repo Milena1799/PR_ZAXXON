@@ -11,7 +11,9 @@ public class ColumnaMove : MonoBehaviour
     public int damage;
     public GameObject Player;
 
-   
+ 
+
+
     // Start is called before the first frame update
     void Start()
     {
